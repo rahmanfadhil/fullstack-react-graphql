@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  server-node:
+    container_name: server-node
+    restart: always
+    build: .
+    ports:
+      - "80:5000"
+      - "4000:4000"
+    links:
+      - postgres-node
+
+  postgres-node:
+    container_name: postgres-node
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_DB=database
