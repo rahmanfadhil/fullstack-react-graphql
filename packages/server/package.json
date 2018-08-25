@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon --ext ts,graphql --watch src --exec \"ts-node src/index.ts\"",
+    "build": "tsc",
+    "start": "NODE_ENV=production node dist"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.16.1",
+    "reflect-metadata": "^0.1.12",
+    "typeorm": "^0.2.7"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^4.0.3",
+    "nodemon": "^1.18.3",
+    "pretty-error": "^2.1.1",
+    "sqlite3": "^4.0.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  }
+}
