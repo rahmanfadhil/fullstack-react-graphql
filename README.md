@@ -24,8 +24,8 @@ Complete fullstack app boilerplate with react, graphql, docker, and typescript
   - Parcel Bundler
   - Service Workers (PWA)
   - React & ReactDOM
-  - React Router (coming soon)
-  - Redux & Redux Thunk (coming soon)
+  - React Router
+  - Redux & Redux Thunk
   - Redux Form (coming soon)
 - Back End
   - Typeorm
