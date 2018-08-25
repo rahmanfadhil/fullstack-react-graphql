@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development nodemon --ext ts,graphql --watch src --exec \"ts-node src/index.ts\"",
-    "build": "tsc",
+    "build": "tsc && cp src/schema.graphql ./dist",
     "start": "NODE_ENV=production node dist"
   },
   "dependencies": {

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["es5", "es6", "esnext.asynciterable"],
+    "lib": ["es5", "es6", "dom", "esnext.asynciterable"],
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
@@ -8,5 +8,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true
-  }
+  },
+  "files": ["./src/index.ts"],
+  "include": ["node_modules/@types"]
 }
