@@ -39,7 +39,7 @@ Complete fullstack app boilerplate with react, graphql, docker, and typescript
 ```sh
 yarn install # Install dependencies
 
-yarn dev
+yarn dev # Development server
 yarn build # Production build
 yarn start # Production server
 
