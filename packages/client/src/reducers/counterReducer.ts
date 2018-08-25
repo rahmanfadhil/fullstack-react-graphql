@@ -1,10 +1,11 @@
 import { Reducer } from "redux";
+import { DECREMENT, INCREMENT } from "../types";
 
 const reducer: Reducer = (state = 0, { type }) => {
   switch (type) {
-    case "INCREMENT":
+    case INCREMENT:
       return state + 1;
-    case "DECREMENT":
+    case DECREMENT:
       return state - 1;
     default:
       return state;

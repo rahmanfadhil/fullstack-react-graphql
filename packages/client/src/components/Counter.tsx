@@ -2,6 +2,7 @@ import * as React from "react";
 import { Dispatch } from "redux";
 import { connect } from "react-redux";
 import { IReduxState } from "../store";
+import { increaseCounter, decreaseCounter } from "../actions/counterActions";
 
 interface IProps {
   dispatch: Dispatch;
@@ -23,7 +24,7 @@ const Counter = (props: IProps) => (
 export default connect(
   ({ counter }: IReduxState) => ({ counter }),
   dispatch => ({
-    increase: () => dispatch({ type: "INCREMENT" }),
-    decrease: () => dispatch({ type: "DECREMENT" })
+    increase: () => increaseCounter(dispatch),
+    decrease: () => decreaseCounter(dispatch)
   })
 )(Counter as any);
