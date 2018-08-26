@@ -5,12 +5,15 @@
     "build": "lerna run build",
     "start": "lerna run start",
     "dev": "lerna run dev",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "precommit": "prettier --write \"packages/**/*.{tsx,ts}\""
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.1.4"
+    "husky": "^0.14.3",
+    "lerna": "^3.1.4",
+    "prettier": "^1.14.2"
   }
 }

@@ -21,7 +21,7 @@ const reducers = combineReducers<IReduxState>({
   form: formReducer
 });
 
-const middlewares: Middleware[] = [
+const middlewares: Middleware[] | any = [
   process.env.NODE_ENV !== "production" ? logger : null,
   thunk,
   promise()
