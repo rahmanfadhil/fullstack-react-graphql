@@ -4,7 +4,6 @@
     "ordered-imports": false,
     "trailing-comma": false,
     "variable-name": false,
-    "arrow-parens": false,
     "object-literal-sort-keys": false,
     "no-console": false,
     "curly": false

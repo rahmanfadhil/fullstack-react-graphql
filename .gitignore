@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/node
 
+tmp
+
 dist
 database.sqlite
 

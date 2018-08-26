@@ -6,7 +6,8 @@
     "start": "lerna run start",
     "dev": "lerna run dev",
     "test": "lerna run test",
-    "precommit": "prettier --write \"packages/**/*.{tsx,ts}\""
+    "lint": "lerna run lint",
+    "precommit": "lerna run lint && prettier --write \"packages/**/*.{tsx,ts}\""
   },
   "workspaces": [
     "packages/*"

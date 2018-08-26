@@ -17,5 +17,7 @@ createConnection(setup).then((connection) => {
   console.log("[database] connected!");
   const typeDefs = readFileSync(join(__dirname, "./schema.graphql"), "utf8");
   const server = new GraphQLServer({ resolvers, typeDefs, context });
-  server.start(() => console.log("[server] listening ..."));
+  server.start({ port: process.env.PORT }, () =>
+    console.log("[server] listening ...")
+  );
 });

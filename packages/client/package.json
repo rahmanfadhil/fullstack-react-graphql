@@ -7,7 +7,7 @@
     "dev": "NODE_ENV=development parcel public/index.html",
     "build": "NODE_ENV=production parcel build public/index.html",
     "start": "NODE_ENV=production serve dist --single",
-    "lint": "tslint -p .",
+    "lint": "tslint -p . --fix",
     "test": "jest",
     "test:watch": "jest --watch || true"
   },
