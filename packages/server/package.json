@@ -10,7 +10,7 @@
     "lint": "tslint -p . --fix",
     "test": "jest",
     "test:watch": "jest --watch || true",
-    "postinstall": "cp .env.template .env"
+    "postinstall": "cp .env.example .env"
   },
   "dependencies": {
     "bcrypt": "^3.0.0",
