@@ -9,6 +9,7 @@ Complete fullstack app boilerplate with react, graphql, docker, and typescript
   - Yarn Workspaces
   - Lerna Monorepo
   - TSLint
+  - Prettier (pre-commit hook)
 - Deployment
   - Docker
   - Docker Compose
