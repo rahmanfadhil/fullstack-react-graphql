@@ -23,7 +23,7 @@ const Counter = (props: IProps) => (
 
 export default connect(
   ({ counter }: IReduxState) => ({ counter }),
-  dispatch => ({
+  (dispatch) => ({
     increase: () => increaseCounter(dispatch),
     decrease: () => decreaseCounter(dispatch)
   })

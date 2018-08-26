@@ -13,7 +13,7 @@ if (process.env.NODE_ENV !== "production") {
   prettyError.start();
 }
 
-createConnection(setup).then(connection => {
+createConnection(setup).then((connection) => {
   console.log("[database] connected!");
   const typeDefs = readFileSync(join(__dirname, "./schema.graphql"), "utf8");
   const server = new GraphQLServer({ resolvers, typeDefs, context });
