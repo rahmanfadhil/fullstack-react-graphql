@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_ENV=production ./dist/index.js",
+    "start": "pm2 start ecosystem.config.js --env production",
     "dev": "NODE_ENV=development nodemon --ext ts,graphql --watch src --exec \"ts-node -r dotenv/config src/index.ts\"",
     "build": "tsc && cp src/schema.graphql ./dist",
     "lint": "tslint -p . --fix",
@@ -17,6 +17,7 @@
     "graphql-yoga": "^1.16.1",
     "jsonwebtoken": "^8.3.0",
     "pg": "^7.4.3",
+    "pm2": "^3.0.4",
     "reflect-metadata": "^0.1.12",
     "typeorm": "^0.2.7"
   },
