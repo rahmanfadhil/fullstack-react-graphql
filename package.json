@@ -10,7 +10,7 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["lerna run lint", "prettier --write", "git add"]
+    "*.{js,ts,tsx}": ["lerna run lint", "prettier --write", "git add"]
   },
   "workspaces": [
     "packages/*"
