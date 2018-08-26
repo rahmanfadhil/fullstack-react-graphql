@@ -1,7 +1,10 @@
 const env = {
   NODE_ENV: "production",
-  TYPEORM_CONNECTION: "sqlite",
-  TYPEORM_DATABASE: "database.sqlite",
+  TYPEORM_CONNECTION: "postgres",
+  TYPEORM_PORT: 5432,
+  TYPEORM_USER: "postgres",
+  TYPEORM_PASSWORD: "12345",
+  TYPEORM_DATABASE: "database",
   TYPEORM_SYNCHRONIZE: true,
   TYPEORM_LOGGING: true,
   TYPEORM_ENTITIES: "./dist/entity/*.js",
