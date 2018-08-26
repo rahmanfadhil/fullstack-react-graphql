@@ -4,7 +4,8 @@
   "scripts": {
     "build": "lerna run build",
     "start": "lerna run start",
-    "dev": "lerna run dev"
+    "dev": "lerna run dev",
+    "test": "lerna run test"
   },
   "workspaces": [
     "packages/*"

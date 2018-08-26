@@ -16,8 +16,8 @@ Complete fullstack app boilerplate with react, graphql, docker, and typescript
   - Travis CI (coming soon)
   - Gitlab CI (coming soon)
 - Testing
-  - Jest (coming soon)
-  - Enzyme (coming soon)
+  - Jest
+  - Enzyme
   - Cypress (coming soon)
   - Just API (coming soon)
 - Front End

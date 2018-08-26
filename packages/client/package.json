@@ -6,9 +6,14 @@
   "scripts": {
     "dev": "NODE_ENV=development parcel public/index.html",
     "build": "NODE_ENV=production parcel build public/index.html",
-    "start": "NODE_ENV=production serve dist --single"
+    "start": "NODE_ENV=production serve dist --single",
+    "test": "jest",
+    "test:watch": "jest --watch || true"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.1.13",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "@types/jest": "^23.3.1",
     "@types/parcel-env": "^0.0.0",
     "@types/react": "^16.4.11",
     "@types/react-dom": "^16.0.7",
@@ -16,9 +21,15 @@
     "@types/react-router-dom": "^4.3.0",
     "@types/redux-form": "^7.4.6",
     "@types/redux-logger": "^3.0.6",
+    "enzyme": "^3.5.0",
+    "enzyme-adapter-react-16": "^1.3.0",
+    "enzyme-to-json": "^3.3.4",
+    "jest": "^23.5.0",
+    "jest-enzyme": "^6.0.3",
     "parcel-bundler": "^1.9.7",
     "parcel-plugin-sw-precache": "^1.0.1",
     "serve": "^10.0.0",
+    "ts-jest": "^23.1.4",
     "tslint": "^5.11.0",
     "typescript": "^3.0.1"
   },

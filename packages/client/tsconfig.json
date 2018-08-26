@@ -6,5 +6,6 @@
     "experimentalDecorators": true,
     "jsx": "react"
   },
+  "files": ["./src/index.tsx"],
   "include": ["node_modules/@types"]
 }
