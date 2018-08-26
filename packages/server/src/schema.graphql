@@ -1,3 +1,34 @@
 type Query {
-  hello: String!
+  allUsers(page: Int, take: Int): [User]!
+}
+
+type Mutation {
+  # Authentication
+  createUserWithEmail(
+    full_name: String!
+    email: String!
+    password: String!
+  ): LoginPayload
+  loginWithEmail(email: String!, password: String!): LoginPayload
+}
+
+enum AuthProvider {
+  email
+  google
+  facebook
+}
+
+type LoginPayload {
+  token: String!
+  user: User!
+}
+
+type User {
+  id: ID!
+  full_name: String!
+  email: String!
+  provider: AuthProvider!
+  password: String
+  created_at: String!
+  updated_at: String!
 }

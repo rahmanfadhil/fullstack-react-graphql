@@ -21,6 +21,9 @@ export class User extends BaseEntity {
   @Column()
   public password: string;
 
+  @Column()
+  public provider: string;
+
   @CreateDateColumn()
   public created_at: Date;
 

@@ -9,13 +9,17 @@
     "start": "NODE_ENV=production node dist"
   },
   "dependencies": {
+    "bcrypt": "^3.0.0",
     "graphql-yoga": "^1.16.1",
+    "jsonwebtoken": "^8.3.0",
     "pg": "^7.4.3",
     "reflect-metadata": "^0.1.12",
     "typeorm": "^0.2.7"
   },
   "devDependencies": {
+    "@types/bcrypt": "^2.0.0",
     "@types/dotenv": "^4.0.3",
+    "@types/jsonwebtoken": "^7.2.8",
     "nodemon": "^1.18.3",
     "pretty-error": "^2.1.1",
     "sqlite3": "^4.0.2",

@@ -7,6 +7,7 @@ import * as prettyError from "pretty-error";
 
 import setup from "./setup";
 import resolvers from "./resolvers";
+import context from "./context";
 
 if (process.env.NODE_ENV !== "production") {
   prettyError.start();
@@ -15,6 +16,6 @@ if (process.env.NODE_ENV !== "production") {
 createConnection(setup).then(connection => {
   console.log("[database] connected!");
   const typeDefs = readFileSync(join(__dirname, "./schema.graphql"), "utf8");
-  const server = new GraphQLServer({ resolvers, typeDefs });
+  const server = new GraphQLServer({ resolvers, typeDefs, context });
   server.start(() => console.log("[server] listening ..."));
 });

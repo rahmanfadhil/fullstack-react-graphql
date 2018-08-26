@@ -13,7 +13,7 @@ Complete fullstack app boilerplate with react, graphql, docker, and typescript
   - Docker
   - Docker Compose
 - Continous Integeration
-  - Circle CI (coming soon)
+  - Travis CI (coming soon)
   - Gitlab CI (coming soon)
 - Testing
   - Jest (coming soon)
@@ -30,6 +30,8 @@ Complete fullstack app boilerplate with react, graphql, docker, and typescript
 - Back End
   - Typeorm
   - Graphql Yoga
+  - Bcrypt
+  - Json Web Token
 - Database
   - PostgreSQL (production)
   - SQLite (development)
